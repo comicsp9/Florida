@@ -406,7 +406,7 @@ button{font:inherit;color:inherit}
     <div class="vault" id="vault">
       <div id="vault-locked">
         <p class="vault-t">Dados protegidos</p>
-        <p class="vault-d">Localizadores e os endereços da casa do Emanuel e da Ju e da casa em Davenport ficam criptografados nesta página. Com a senha, aparecem aqui e no roteiro, com as rotas.</p>
+        <p class="vault-d">Localizadores e os endereços da casa do Emmanuel e da Ju e da casa em Davenport ficam criptografados nesta página. Com a senha, aparecem aqui e no roteiro, com as rotas.</p>
         <div class="vault-row">
           <label class="sr" for="vault-pw">Senha</label>
           <input id="vault-pw" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" placeholder="Senha">
@@ -718,7 +718,7 @@ button{font:inherit;color:inherit}
 
     <div class="block">
       <h3>Sobre esta página</h3>
-      <p>Versão 4, de 24/09/2026: reservas de voo, carro, Airbnb e cruzeiro incorporadas a partir das telas enviadas; dados sensíveis protegidos por senha, incluindo o endereço do Emanuel e da Ju; correção para abrir em visualizadores que isolam a página. Continuam como Premissa ou A confirmar os itens sem documento.</p>
+      <p>Versão 5, de 24/09/2026: reservas de voo, carro, Airbnb e cruzeiro incorporadas a partir das telas enviadas; dados sensíveis protegidos por senha, incluindo o endereço do Emmanuel e da Ju, com o nome corrigido; correção para abrir em visualizadores que isolam a página. Continuam como Premissa ou A confirmar os itens sem documento.</p>
       <p>Privacidade: no GitHub Pages a página é pública para quem tiver o link. Localizadores e endereços estão criptografados no próprio arquivo e só aparecem com a senha, que não fica gravada na página. A página também pede aos buscadores que não a indexem.</p>
       <p>As marcações de pendências ficam salvas só no aparelho em que foram feitas.</p>
     </div>
@@ -726,7 +726,7 @@ button{font:inherit;color:inherit}
 </main>
 
 <footer class="foot"><div class="wrap">
-  Flórida 2026, versão 4 de 24/09/2026. Clima: Open-Meteo. Alertas: National Weather Service. Para testar outro dia, acrescente <code>?hoje=2026-10-06</code> ao endereço.
+  Flórida 2026, versão 5 de 24/09/2026. Clima: Open-Meteo. Alertas: National Weather Service. Para testar outro dia, acrescente <code>?hoje=2026-10-06</code> ao endereço.
 </div></footer>
 <script>
 (() => {
@@ -743,7 +743,7 @@ const TRIP = {
   meta: {
     start: "2026-09-24",
     end: "2026-10-09",   // chegada a Fortaleza em 09/10, 11:15 (LA8189)
-    version: "4",
+    version: "5",
     updated: "24/09/2026"
   },
   places: {
@@ -755,7 +755,7 @@ const TRIP = {
     cg:      { name: "Davenport",            lat: 28.2611, lon: -81.6237 }
   },
   legs: [
-    { id: "miami",   name: "Miami",       color: "flamingo", range: "24 a 27/09",    sub: "Casa do Emanuel e da Ju",                       pm: "MIAMI • FLÓRIDA • EUA • " },
+    { id: "miami",   name: "Miami",       color: "flamingo", range: "24 a 27/09",    sub: "Casa do Emmanuel e da Ju",                       pm: "MIAMI • FLÓRIDA • EUA • " },
     { id: "cocoa",   name: "Cocoa Beach", color: "sunrise",  range: "27 a 28/09",    sub: "Airbnb da Erin, véspera do embarque",           pm: "COCOA BEACH • FLÓRIDA • EUA • " },
     { id: "navio",   name: "Navio",       color: "gulf",     range: "28/09 a 02/10", sub: "Utopia of the Seas, 4 noites a partir de Port Canaveral", pm: "A BORDO • UTOPIA OF THE SEAS • " },
     { id: "orlando", name: "Orlando",     color: "spring",   range: "02 a 08/10",    sub: "Casa em Davenport, região de ChampionsGate",   pm: "ORLANDO • FLÓRIDA • EUA • " },
@@ -765,7 +765,7 @@ const TRIP = {
     { date: "2026-09-24", leg: "miami", place: "mia", title: "Partida para Miami", sub: "LATAM LA8188, 19h, pouso à 01h10",
       callouts: [
         { type: "crit", tag: "risco", title: "Resolver antes de embarcar: cadeirinha na retirada do carro",
-          text: "A cadeirinha comprada será entregue na casa do Emanuel e da Ju, mas o carro do Turo é retirado no aeroporto de madrugada. Na Flórida, criança de até 3 anos só pode andar de carro em cadeirinha certificada pelo padrão federal americano (lei estadual 316.613). No app do Turo, em Manage trip, veja se o anfitrião oferece cadeirinha como Extra: dá para incluir até o início da locação. Se não oferecer, pergunte pelo Message host. A instalação fica por conta de vocês." }
+          text: "A cadeirinha comprada será entregue na casa do Emmanuel e da Ju, mas o carro do Turo é retirado no aeroporto de madrugada. Na Flórida, criança de até 3 anos só pode andar de carro em cadeirinha certificada pelo padrão federal americano (lei estadual 316.613). No app do Turo, em Manage trip, veja se o anfitrião oferece cadeirinha como Extra: dá para incluir até o início da locação. Se não oferecer, pergunte pelo Message host. A instalação fica por conta de vocês." }
       ],
       items: [
         { text: "Enviar as fotos da CNH no app do Turo", st: "risco", note: "O app marca o envio como obrigatório para a retirada." },
@@ -774,21 +774,21 @@ const TRIP = {
         { text: "Bagagem de mão do Nicolas para a noite inteira: fraldas, troca de roupa, comida e remédios de uso", st: "recomendacao" },
         { text: "Passaportes e vistos americanos dos três à mão para a imigração", st: "recomendacao" }
       ] },
-    { date: "2026-09-25", leg: "miami", place: "mia", title: "Chegada e casa do Emanuel e da Ju", sub: "Pouso de madrugada, carro do Turo e descanso",
+    { date: "2026-09-25", leg: "miami", place: "mia", title: "Chegada e casa do Emmanuel e da Ju", sub: "Pouso de madrugada, carro do Turo e descanso",
       items: [
         { t: "01:10", tz: "Flórida", text: "Pouso em Miami (MIA)", st: "confirmado" },
         { text: "Imigração e bagagens", note: "Tempo variável. O anfitrião do Turo precisa saber do voo e dessa espera." },
         { text: "Retirada do Hyundai Palisade 2025, placa 39ERUS, no aeroporto", st: "confirmado", note: "Às 07h04 de 24/09 o app indicava 19 horas para o início, ou seja, por volta de 01h a 02h da Flórida." },
         { text: "Cadeirinha instalada antes de sair do aeroporto", st: "risco" },
-        { text: "Trajeto até a casa do Emanuel e da Ju", st: "premissa", note: "Cerca de 30 minutos de madrugada, sem trânsito (estimativa).", sec: "emanuel", from: "Miami International Airport" },
+        { text: "Trajeto até a casa do Emmanuel e da Ju", st: "premissa", note: "Cerca de 30 minutos de madrugada, sem trânsito (estimativa).", sec: "emmanuel", from: "Miami International Airport" },
         { text: "Resto do dia livre para recuperar o sono", st: "sugestao" }
       ] },
-    { date: "2026-09-26", leg: "miami", place: "mia", title: "Miami com Emanuel e Ju", sub: "Dia livre",
+    { date: "2026-09-26", leg: "miami", place: "mia", title: "Miami com Emmanuel e Ju", sub: "Dia livre",
       items: [ { text: "Programação a combinar com os anfitriões", st: "a-confirmar" } ] },
     { date: "2026-09-27", leg: "cocoa", place: "cocoa", title: "Estrada para Cocoa Beach", sub: "Cerca de 3 horas de carro e uma noite no Airbnb",
       items: [
         { text: "Sair de Miami por volta das 11h a 12h para chegar depois das 15h", st: "sugestao" },
-        { text: "Estrada até Cocoa Beach, cerca de 3 horas sem paradas", st: "estimativa", note: "O Florida's Turnpike é pedagiado; na I-95, só as faixas expressas do sul da Flórida. No Turo, o pedágio costuma ser cobrado depois, pelo anfitrião.", sec: "emanuel", to: "Cocoa Beach, FL" },
+        { text: "Estrada até Cocoa Beach, cerca de 3 horas sem paradas", st: "estimativa", note: "O Florida's Turnpike é pedagiado; na I-95, só as faixas expressas do sul da Flórida. No Turo, o pedágio costuma ser cobrado depois, pelo anfitrião.", sec: "emmanuel", to: "Cocoa Beach, FL" },
         { t: "15:00", tz: "Flórida", text: "Check-in no Airbnb a partir deste horário", st: "confirmado", note: "Anfitriã: Erin. Endereço e instruções de acesso estão no app do Airbnb." }
       ] },
     { date: "2026-09-28", leg: "navio", place: "cocoa", title: "Embarque no Utopia of the Seas", sub: "Port Canaveral, partida às 16h",
@@ -862,7 +862,7 @@ const TRIP = {
       items: [
         { text: "Saída da casa em Davenport", st: "a-confirmar" },
         { text: "Estrada até o aeroporto de Miami, cerca de 3h30 a 4h", st: "estimativa", note: "Rota usual pelo Florida's Turnpike, pedagiado.", sec: "casa", to: "Miami International Airport" },
-        { text: "Jantar de despedida com Emanuel e Ju", st: "sugestao" },
+        { text: "Jantar de despedida com Emmanuel e Ju", st: "sugestao" },
         { text: "Devolução do carro do Turo no aeroporto", st: "a-confirmar", note: "Horário conforme o fim da locação no app." },
         { t: "00:25", tz: "sex, 09/10", text: "No balcão da LATAM, 3 horas antes do voo", st: "recomendacao" }
       ] },
@@ -880,9 +880,9 @@ const TRIP = {
     { kind: "Carro, pelo Turo", title: "Hyundai Palisade 2025", leg: "miami", when: "25/09 a 08/10", status: "confirmado",
       fields: [ ["Retirada", "Aeroporto Internacional de Miami", "confirmado"], ["Placa", "39ERUS", "confirmado"], ["Início", "25/09, por volta de 01h a 02h", "estimativa"], ["Fim", "08/10; conferir o horário no app", "a-confirmar"], ["CNH", "Enviar as fotos no app, obrigatório", "risco"], ["Cadeirinha", "Extra do anfitrião, se houver", "a-confirmar"], ["Proteção", "Upgrade para Standard: US$ 5,40/dia", "recomendacao"], ["Pedágio", "Cobrado depois, conforme o carro", "a-confirmar"] ] },
     { kind: "Compra", title: "Cadeirinha do Nicolas", leg: "miami", when: "Entrega em Miami", status: "a-confirmar",
-      fields: [ ["Modelo", null], ["Tipo", "Virada para trás, adequada a cerca de 1 ano", "recomendacao"], ["Entrega", "Casa do Emanuel e da Ju", "premissa"], ["Previsão", null] ] },
-    { kind: "Hospedagem", title: "Casa do Emanuel e da Ju", leg: "miami", when: "25 a 27/09", status: "premissa",
-      fields: [ ["Período", "25 a 27/09", "premissa"], ["Endereço", null, "sens", "emanuel"] ] },
+      fields: [ ["Modelo", null], ["Tipo", "Virada para trás, adequada a cerca de 1 ano", "recomendacao"], ["Entrega", "Casa do Emmanuel e da Ju", "premissa"], ["Previsão", null] ] },
+    { kind: "Hospedagem", title: "Casa do Emmanuel e da Ju", leg: "miami", when: "25 a 27/09", status: "premissa",
+      fields: [ ["Período", "25 a 27/09", "premissa"], ["Endereço", null, "sens", "emmanuel"] ] },
     { kind: "Hospedagem, Airbnb", title: "Cocoa Beach, anfitriã Erin", leg: "cocoa", when: "27 a 28/09, 1 noite", status: "confirmado",
       fields: [ ["Check-in", "Domingo, 27/09, a partir das 15:00", "confirmado"], ["Check-out", "No app do Airbnb", "a-confirmar"], ["Endereço", "No app do Airbnb"] ] },
     { kind: "Cruzeiro, Royal Caribbean", title: "Utopia of the Seas", leg: "navio", when: "28/09 a 02/10", status: "confirmado",
@@ -892,7 +892,7 @@ const TRIP = {
   ],
   tasks: [
     { group: "Hoje, antes de embarcar", items: [
-      { id: "t-cadeirinha", prio: "risco", title: "Garantir cadeirinha para a retirada do carro de madrugada", why: "No Turo, Extras podem ser incluídos até o início da locação: veja em Manage trip se o anfitrião oferece cadeirinha; se não, pergunte pelo Message host. A comprada só chega depois, na casa do Emanuel e da Ju." },
+      { id: "t-cadeirinha", prio: "risco", title: "Garantir cadeirinha para a retirada do carro de madrugada", why: "No Turo, Extras podem ser incluídos até o início da locação: veja em Manage trip se o anfitrião oferece cadeirinha; se não, pergunte pelo Message host. A comprada só chega depois, na casa do Emmanuel e da Ju." },
       { id: "t-cnh", prio: "risco", title: "Enviar as fotos da CNH no app do Turo", why: "O app marca o envio como obrigatório para a retirada." },
       { id: "t-host", prio: "recomendacao", title: "Avisar o anfitrião do Turo sobre o LA8188 e a imigração", why: "O pouso é à 01h10 e a locação começa por volta desse horário." },
       { id: "t-protecao", prio: "recomendacao", title: "Decidir o upgrade da proteção do Turo para Standard", why: "Por US$ 5,40 por dia, cerca de US$ 76 em 14 dias, o teto do que você paga por dano externo cai de US$ 3.000 (plano Minimum) para US$ 500. Cartão de crédito dificilmente cobre carro do Turo. Dano mecânico e interno fica fora de qualquer plano." },
@@ -926,7 +926,7 @@ const TRIP = {
 };
 
 /* Dados protegidos: AES-GCM com chave derivada da senha (PBKDF2-SHA256). A senha não fica no arquivo. */
-const VAULT = {"v":1,"iter":600000,"salt":"Nq96XiUiLVGPTgiXNGtJeQ==","iv":"WF134PdekK0xc1Zi","ct":"bwvWlwXVcFxbCZ1aGMM5skjEdswxslc9zYuFMMtZYZVEnjYbwDRceYytuu27ZOnz1KAjgMnXoTqCDP67uz9bwKxHzH45ZT8wZGnAqwvRwThmsCXMKal4xbA4GnbxzKzc0SOldXS13T+iw/JFHsBOdjFbvLrZhiots+jsOz/K7hI21fXJ30UjVe8Z5vYbMOb93f26BXdhUFUgYcj7sg1/h73HluIkMYxd7RG1X6385AME9wToC+NI7zi4SgNfOT/Ffdwa9276sR/ydB7GXROTVzPMhqY=","keys":["latam","royal","casa","emanuel","emanuel_q"]};
+const VAULT = {"v":1,"iter":600000,"salt":"lO3C8HbvhzHyLacbCi7cLw==","iv":"iTXF6MimLL3lPw8c","ct":"O5K98V31rckLIizzIPFVxz3r9+WU0i5hIvrWXK699uSEql7HKXRMUH+75ajOYebki43smOthYbVmm6SQ3QQFaaZ55rD+4YIoK+pHtCA6/MGyfCH8xgMDLbFszlYWwn9nCRf8gzO8OjkyBvWqIS+FHWHsxpOVPWsRAQU2CP4NYlYNH3silJgYplE5C5npb2PCzsFR7Ee5L1bjorjJSqyJEScgoJNzjYkrjB+cmZFwQS5iwx0+s4ICrex+1v5ZHRENbGulTAKe7zDurwhlrR324b606ShniA==","keys":["latam","royal","casa","emmanuel","emmanuel_q"]};
 
 /* ==================================================================
    Utilidades
@@ -1338,7 +1338,7 @@ async function loadAlerts() {
    Dados protegidos por senha
    ================================================================== */
 const VAULT_KEY = "fl26-senha";
-const ADDR_KEYS = ["casa", "emanuel"];
+const ADDR_KEYS = ["casa", "emmanuel"];
 let SECRETS = null;
 const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
 async function openVault(pw) {

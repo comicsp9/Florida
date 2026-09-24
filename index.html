@@ -406,7 +406,7 @@ button{font:inherit;color:inherit}
     <div class="vault" id="vault">
       <div id="vault-locked">
         <p class="vault-t">Dados protegidos</p>
-        <p class="vault-d">Localizadores e o endereço da casa ficam criptografados nesta página. Com a senha, aparecem aqui e no roteiro.</p>
+        <p class="vault-d">Localizadores e os endereços da casa do Emanuel e da Ju e da casa em Davenport ficam criptografados nesta página. Com a senha, aparecem aqui e no roteiro, com as rotas.</p>
         <div class="vault-row">
           <label class="sr" for="vault-pw">Senha</label>
           <input id="vault-pw" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" placeholder="Senha">
@@ -417,7 +417,7 @@ button{font:inherit;color:inherit}
       </div>
       <div id="vault-open" hidden>
         <p class="vault-t">Dados liberados neste aparelho</p>
-        <p class="vault-d">Localizadores e endereço visíveis nas reservas e no roteiro.</p>
+        <p class="vault-d">Localizadores e endereços visíveis nas reservas e no roteiro.</p>
         <button type="button" id="vault-lock" class="vault-btn ghost">Bloquear de novo</button>
       </div>
     </div>
@@ -718,15 +718,15 @@ button{font:inherit;color:inherit}
 
     <div class="block">
       <h3>Sobre esta página</h3>
-      <p>Versão 3, de 24/09/2026: reservas de voo, carro, Airbnb e cruzeiro incorporadas a partir das telas enviadas; dados sensíveis protegidos por senha; correção para abrir em visualizadores que isolam a página. Continuam como Premissa ou A confirmar os itens sem documento.</p>
-      <p>Privacidade: no GitHub Pages a página é pública para quem tiver o link. Localizadores e o endereço da casa estão criptografados no próprio arquivo e só aparecem com a senha, que não fica gravada na página. A página também pede aos buscadores que não a indexem.</p>
+      <p>Versão 4, de 24/09/2026: reservas de voo, carro, Airbnb e cruzeiro incorporadas a partir das telas enviadas; dados sensíveis protegidos por senha, incluindo o endereço do Emanuel e da Ju; correção para abrir em visualizadores que isolam a página. Continuam como Premissa ou A confirmar os itens sem documento.</p>
+      <p>Privacidade: no GitHub Pages a página é pública para quem tiver o link. Localizadores e endereços estão criptografados no próprio arquivo e só aparecem com a senha, que não fica gravada na página. A página também pede aos buscadores que não a indexem.</p>
       <p>As marcações de pendências ficam salvas só no aparelho em que foram feitas.</p>
     </div>
   </section>
 </main>
 
 <footer class="foot"><div class="wrap">
-  Flórida 2026, versão 3 de 24/09/2026. Clima: Open-Meteo. Alertas: National Weather Service. Para testar outro dia, acrescente <code>?hoje=2026-10-06</code> ao endereço.
+  Flórida 2026, versão 4 de 24/09/2026. Clima: Open-Meteo. Alertas: National Weather Service. Para testar outro dia, acrescente <code>?hoje=2026-10-06</code> ao endereço.
 </div></footer>
 <script>
 (() => {
@@ -743,7 +743,7 @@ const TRIP = {
   meta: {
     start: "2026-09-24",
     end: "2026-10-09",   // chegada a Fortaleza em 09/10, 11:15 (LA8189)
-    version: "3",
+    version: "4",
     updated: "24/09/2026"
   },
   places: {
@@ -780,7 +780,7 @@ const TRIP = {
         { text: "Imigração e bagagens", note: "Tempo variável. O anfitrião do Turo precisa saber do voo e dessa espera." },
         { text: "Retirada do Hyundai Palisade 2025, placa 39ERUS, no aeroporto", st: "confirmado", note: "Às 07h04 de 24/09 o app indicava 19 horas para o início, ou seja, por volta de 01h a 02h da Flórida." },
         { text: "Cadeirinha instalada antes de sair do aeroporto", st: "risco" },
-        { text: "Trajeto até a casa do Emanuel e da Ju", st: "premissa" },
+        { text: "Trajeto até a casa do Emanuel e da Ju", st: "premissa", note: "Cerca de 30 minutos de madrugada, sem trânsito (estimativa).", sec: "emanuel", from: "Miami International Airport" },
         { text: "Resto do dia livre para recuperar o sono", st: "sugestao" }
       ] },
     { date: "2026-09-26", leg: "miami", place: "mia", title: "Miami com Emanuel e Ju", sub: "Dia livre",
@@ -788,7 +788,7 @@ const TRIP = {
     { date: "2026-09-27", leg: "cocoa", place: "cocoa", title: "Estrada para Cocoa Beach", sub: "Cerca de 3 horas de carro e uma noite no Airbnb",
       items: [
         { text: "Sair de Miami por volta das 11h a 12h para chegar depois das 15h", st: "sugestao" },
-        { text: "Estrada até Cocoa Beach, cerca de 3 horas sem paradas", st: "estimativa", note: "O Florida's Turnpike é pedagiado; na I-95, só as faixas expressas do sul da Flórida. No Turo, o pedágio costuma ser cobrado depois, pelo anfitrião." },
+        { text: "Estrada até Cocoa Beach, cerca de 3 horas sem paradas", st: "estimativa", note: "O Florida's Turnpike é pedagiado; na I-95, só as faixas expressas do sul da Flórida. No Turo, o pedágio costuma ser cobrado depois, pelo anfitrião.", sec: "emanuel", to: "Cocoa Beach, FL" },
         { t: "15:00", tz: "Flórida", text: "Check-in no Airbnb a partir deste horário", st: "confirmado", note: "Anfitriã: Erin. Endereço e instruções de acesso estão no app do Airbnb." }
       ] },
     { date: "2026-09-28", leg: "navio", place: "cocoa", title: "Embarque no Utopia of the Seas", sub: "Port Canaveral, partida às 16h",
@@ -882,7 +882,7 @@ const TRIP = {
     { kind: "Compra", title: "Cadeirinha do Nicolas", leg: "miami", when: "Entrega em Miami", status: "a-confirmar",
       fields: [ ["Modelo", null], ["Tipo", "Virada para trás, adequada a cerca de 1 ano", "recomendacao"], ["Entrega", "Casa do Emanuel e da Ju", "premissa"], ["Previsão", null] ] },
     { kind: "Hospedagem", title: "Casa do Emanuel e da Ju", leg: "miami", when: "25 a 27/09", status: "premissa",
-      fields: [ ["Período", "25 a 27/09", "premissa"], ["Endereço", null] ] },
+      fields: [ ["Período", "25 a 27/09", "premissa"], ["Endereço", null, "sens", "emanuel"] ] },
     { kind: "Hospedagem, Airbnb", title: "Cocoa Beach, anfitriã Erin", leg: "cocoa", when: "27 a 28/09, 1 noite", status: "confirmado",
       fields: [ ["Check-in", "Domingo, 27/09, a partir das 15:00", "confirmado"], ["Check-out", "No app do Airbnb", "a-confirmar"], ["Endereço", "No app do Airbnb"] ] },
     { kind: "Cruzeiro, Royal Caribbean", title: "Utopia of the Seas", leg: "navio", when: "28/09 a 02/10", status: "confirmado",
@@ -926,7 +926,7 @@ const TRIP = {
 };
 
 /* Dados protegidos: AES-GCM com chave derivada da senha (PBKDF2-SHA256). A senha não fica no arquivo. */
-const VAULT = {"v":1,"iter":600000,"salt":"KrebLs6u1pyXiTGlGEUoig==","iv":"QGc5/wO9OFF0iqJ3","ct":"RbQA/asLQRG4vqHNQGsB4khkOyJthW9GHKpzbjWyq7+O/sdfg/nSRb44SrPeRodxRDo4q9qyqFm+uSw9SWuJ1gFOFVrROE8uR+WevhINDA4X77u1uA1BYXmvohq2TA==","keys":["latam","royal","casa"]};
+const VAULT = {"v":1,"iter":600000,"salt":"Nq96XiUiLVGPTgiXNGtJeQ==","iv":"WF134PdekK0xc1Zi","ct":"bwvWlwXVcFxbCZ1aGMM5skjEdswxslc9zYuFMMtZYZVEnjYbwDRceYytuu27ZOnz1KAjgMnXoTqCDP67uz9bwKxHzH45ZT8wZGnAqwvRwThmsCXMKal4xbA4GnbxzKzc0SOldXS13T+iw/JFHsBOdjFbvLrZhiots+jsOz/K7hI21fXJ30UjVe8Z5vYbMOb93f26BXdhUFUgYcj7sg1/h73HluIkMYxd7RG1X6385AME9wToC+NI7zi4SgNfOT/Ffdwa9276sR/ydB7GXROTVzPMhqY=","keys":["latam","royal","casa","emanuel","emanuel_q"]};
 
 /* ==================================================================
    Utilidades
@@ -1111,7 +1111,7 @@ function renderBookings() {
     }).join("");
     return `<article class="ticket" style="--c:var(--${leg ? leg.color : "gulf"})"><div class="t-main"><p class="t-kind">${esc(b.kind)}</p><h3>${esc(b.title)}</h3><dl class="fields">${rows}</dl></div><div class="t-stub"><span class="t-when">${esc(b.when)}</span>${tag(b.status)}</div></article>`;
   }).join("");
-  $("#res-progress").textContent = `Campos preenchidos: ${filled} de ${total}, dos quais ${confirmed} confirmados pelas telas das reservas de 24/09. Localizadores e o endereço da casa ficam protegidos por senha.`;
+  $("#res-progress").textContent = `Campos preenchidos: ${filled} de ${total}, dos quais ${confirmed} confirmados pelas telas das reservas de 24/09. Localizadores e endereços ficam protegidos por senha.`;
 }
 
 /* ==================================================================
@@ -1338,6 +1338,7 @@ async function loadAlerts() {
    Dados protegidos por senha
    ================================================================== */
 const VAULT_KEY = "fl26-senha";
+const ADDR_KEYS = ["casa", "emanuel"];
 let SECRETS = null;
 const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
 async function openVault(pw) {
@@ -1356,15 +1357,18 @@ function paintSecrets() {
     el.classList.toggle("locked", !SECRETS);
     if (!SECRETS) { el.innerHTML = `${ICON.lock}<span>protegido por senha</span>`; return; }
     if (v == null || v === "") { el.textContent = "não informado"; return; }
-    el.innerHTML = k === "casa"
-      ? `${esc(v)} <a href="${mapsSearch(v)}" target="_blank" rel="noopener">Abrir no mapa</a>`
+    el.innerHTML = ADDR_KEYS.includes(k)
+      ? `${esc(v)} <a href="${mapsSearch(SECRETS[k + "_q"] || v)}" target="_blank" rel="noopener">Abrir no mapa</a>`
       : `<span class="code">${esc(v)}</span> <button type="button" class="copy" data-copy="${esc(v)}">Copiar</button>`;
   });
   $$("[data-secret-item]").forEach((el) => {
-    const v = SECRETS ? SECRETS[el.dataset.secretItem] : null;
+    const k = el.dataset.secretItem;
+    const v = SECRETS ? SECRETS[k] : null;
     if (!v) { el.innerHTML = `Endereço protegido por senha. <a href="#reservas" data-goto="reservas">Desbloquear</a>`; return; }
-    const url = el.dataset.from ? mapsDir(el.dataset.from, v) : el.dataset.to ? mapsDir(v, el.dataset.to) : mapsSearch(v);
-    el.innerHTML = `${esc(v)}. <a href="${url}" target="_blank" rel="noopener">Abrir a rota</a>`;
+    const q = SECRETS[k + "_q"] || v;
+    const url = el.dataset.from ? mapsDir(el.dataset.from, q) : el.dataset.to ? mapsDir(q, el.dataset.to) : mapsSearch(q);
+    const label = el.dataset.from ? "Destino: " : el.dataset.to ? "Saída: " : "";
+    el.innerHTML = `${label}${esc(v)}. <a href="${url}" target="_blank" rel="noopener">Abrir a rota</a>`;
   });
   const open = !!SECRETS;
   $("#vault-locked").hidden = open;
